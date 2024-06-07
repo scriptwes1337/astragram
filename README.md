@@ -18,5 +18,7 @@ Built with React/Vite, Bootstrap (CSS CDN Link), Bootstrap Icons.
 </p>
 
 <h3>Dependencies</h3>
+
 - axios
-- bootstrap-icons
+- bootstrap
+- icons
