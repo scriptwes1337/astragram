@@ -63,7 +63,7 @@ function App() {
     setLoadingMsg("Loading more photos...");
     setTimeout(() => {
       setLoadingMsg("");
-    }, 1000);
+    }, 10000);
   }, [daysAgo]);
 
   useEffect(() => {
