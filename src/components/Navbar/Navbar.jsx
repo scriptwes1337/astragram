@@ -21,14 +21,14 @@ export const Navbar = () => {
             target="__blank"
             className="text-decoration-none text-light"
           >
-            Powered by NASA <i class="bi bi-box-arrow-up-right"> </i>
+            NASA API <i className="bi bi-box-arrow-up-right"> </i>
           </a>
           <a
             href="https://github.com/scriptwes1337/astragram"
             target="__blank"
             className="text-decoration-none text-light"
           >
-            Source Code
+            Code
             <i
               className="bi bi-github"
               style={{ color: "white", padding: "0 0.5rem" }}

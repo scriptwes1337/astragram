@@ -1,9 +1,22 @@
-# React + Vite
+<h1>
+  astragram 
+ <img
+    src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif"
+    alt="✨"
+    width="30"
+    height="30"
+    className="mx-1"
+          />
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>
+A pinterest-inspired app for scrolling astronomy pictures, powered by [NASA's APOD (Astronomy Picture Of The Day) API](https://github.com/nasa/apod-api)
+</p>
 
-Currently, two official plugins are available:
+<p>
+Built with React/Vite, Bootstrap (CSS CDN Link), Bootstrap Icons.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# astragram
+<h3>Dependencies</h3>
+- axios
+- bootstrap-icons

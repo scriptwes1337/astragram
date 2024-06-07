@@ -8,13 +8,14 @@ import { Post } from "../components/Post/Post";
 function App() {
   const [data, setData] = useState([]);
   const [daysAgo, setDaysAgo] = useState(8);
-  const [viewExplore, setViewExplore] = useState(false);
+  const [loadingMsg, setLoadingMsg] = useState("");
 
   const apiKey = import.meta.env.VITE_API_KEY;
   const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
 
   const getTodayDate = () => {
     const today = new Date();
+    today.setDate(today.getDate() - 1); // Subtract 1 day
     const year = today.getFullYear();
     const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are zero-based, so add 1
     const day = String(today.getDate()).padStart(2, "0");
@@ -59,6 +60,10 @@ function App() {
 
   useEffect(() => {
     fetchData(daysAgo);
+    setLoadingMsg("Loading more photos...");
+    setTimeout(() => {
+      setLoadingMsg("");
+    }, 1000);
   }, [daysAgo]);
 
   useEffect(() => {
@@ -80,12 +85,13 @@ function App() {
       <Navbar />
       <div className="container-fluid" style={{ maxWidth: "700px" }}>
         {data.length === 0 ? (
-          <p className="text-white">Loading...</p>
+          <p className="text-white">Loading for a long time? Refresh the page or try again later.</p>
         ) : (
           data.map((data) => {
             return <Post data={data} key={data.date} />;
           })
         )}
+        <p className="text-light">{loadingMsg}</p>
       </div>
     </div>
   );
