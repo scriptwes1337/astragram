@@ -10,7 +10,7 @@
 </h1>
 
 <p>
-A pinterest-inspired app for scrolling astronomy pictures, powered by [NASA's APOD (Astronomy Picture Of The Day) API](https://github.com/nasa/apod-api)
+A pinterest-inspired app for scrolling astronomy pictures, powered by NASA's APOD (Astronomy Picture Of The Day) API - https://github.com/nasa/apod-api
 </p>
 
 <p>
