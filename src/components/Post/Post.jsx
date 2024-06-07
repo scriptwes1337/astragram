@@ -47,14 +47,14 @@ export const Post = ({ data }) => {
             {displayMore ? (
               <span
                 className="text-secondary"
-                style={{ cursor: "click" }}
+                style={{ cursor: "pointer" }}
                 onClick={() => setDisplayMore(false)}
               > Show less
               </span>
             ) : (
               <span
                 className="text-secondary"
-                style={{ cursor: "click" }}
+                style={{ cursor: "pointer" }}
                 onClick={() => setDisplayMore(true)}
               > Show more
               </span>
