@@ -12,13 +12,3 @@
 <p>
 A pinterest-inspired app for scrolling astronomy pictures, powered by NASA's APOD (Astronomy Picture Of The Day) API - https://github.com/nasa/apod-api
 </p>
-
-<p>
-Built with React/Vite, Bootstrap (CSS CDN Link), Bootstrap Icons.
-</p>
-
-<h3>Dependencies</h3>
-
-- axios
-- bootstrap
-- icons
